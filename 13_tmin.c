@@ -8,7 +8,7 @@
  */
 int tmin(void)
 {
-    return 2;
+    return 1 << 31;
 }
 
 int test_tmin(void)
@@ -18,6 +18,6 @@ int test_tmin(void)
 
 int main(void)
 {
-    printf("expected: %x\n", tmin());
-    printf("actual  : %x\n", test_tmin());
+    printf("expected: %d\n", tmin());
+    printf("actual  : %d\n", test_tmin());
 }

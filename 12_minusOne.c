@@ -8,7 +8,7 @@
  */
 int minusOne(void)
 {
-    return 2;
+    return ~1 + 1;
 }
 
 int test_minusOne(void)
@@ -18,6 +18,6 @@ int test_minusOne(void)
 
 int main(void)
 {
-    printf("expected: %x\n", minusOne());
-    printf("actual  : %x\n", test_minusOne());
+    printf("expected: %d\n", minusOne());
+    printf("actual  : %d\n", test_minusOne());
 }

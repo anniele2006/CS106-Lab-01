@@ -8,7 +8,7 @@
  */
 int tmax(void)
 {
-    return 2;
+    return ~(1 << 31);
 }
 
 int test_tmax(void)
@@ -18,6 +18,6 @@ int test_tmax(void)
 
 int main(void)
 {
-    printf("expected: %x\n", tmax());
-    printf("actual  : %x\n", test_tmax());
+    printf("expected: %d\n", tmax());
+    printf("actual  : %d\n", test_tmax());
 }
